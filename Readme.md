@@ -1,5 +1,7 @@
 # CodeCademy Python
 
+![Logo](./logo.png)
+
 This contains the projects from CodeCademy python program, used to practice and improve on getting experience with Python programming language.
 
 Python is a general-purpose, versatile and popular programming language. It is concise and easy to read, and it is also a good language to have in any programmer’s stack as it can be used for everything from web development to software development and data science applications.
@@ -10,4 +12,17 @@ pip is the default package manager for Python. It is distributed with Python, wh
 
 Link to cheatsheet: https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-hello-world/cheatsheet
 
-![Logo](./logo.png)
+## Syllabus
+
+1. Control Flow
+2. Lists
+3. Loops
+4. Functions
+5. Python Code Challenges
+6. Strings
+7. Modules
+8. Dictionaries
+9. Files
+10. Classes
+11. Python Code Challenges 2
+12. Function Arguments
