@@ -26,3 +26,7 @@ Link to cheatsheet: https://www.codecademy.com/learn/learn-python-3/modules/lear
 10. Classes
 11. Python Code Challenges 2
 12. Function Arguments
+
+URL to CodeCademy:
+
+https://www.codecademy.com/learn/learn-python-3
