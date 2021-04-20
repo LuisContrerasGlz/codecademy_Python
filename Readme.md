@@ -30,3 +30,8 @@ Link to cheatsheet: https://www.codecademy.com/learn/learn-python-3/modules/lear
 URL to CodeCademy:
 
 https://www.codecademy.com/learn/learn-python-3
+
+For more certifications and complete profile please check my
+LinkedIn:
+
+https://www.linkedin.com/in/luis-francisco-contreras-gonzalez-45791715a/
