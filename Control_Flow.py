@@ -4,6 +4,7 @@
 # In order to build control flow into our program, we want to be able to check if something is true or not. A boolean expression is a statement that can either be True or False.
 
 # "Dogs are mammals"
+import math
 import random
 statement_one = "Yes"
 
@@ -148,3 +149,88 @@ else:
 
 print(name + " " + "asks: " + "question")
 print("Magic 8-Ball's answer: " + answer)
+
+# Python refers to the mistakes within the program as errors and will point to the location where an error occurred with a ^ character.
+# When programs throw errors that we didn’t expect to encounter, we call those errors bugs.
+# Programmers call the process of updating the program so that it no longer produces bugs debugging.
+
+# In Python, there are many different ways of classifying errors, but here are some common ones:
+
+# SyntaxError: Error caused by not following the proper structure (syntax) of the language.
+# NameError: Errors reported when the interpreter detects a variable that is unknown.
+# TypeError: Errors thrown when an operation is applied to an object of an inappropriate type.
+
+# Here’s an example of a SyntaxError error message:
+
+# File "script.py", line 1
+#  print(Hello world!)
+#                  ^
+# SyntaxError: invalid syntax
+
+# Some common syntax errors are:
+
+# Misspelling a Python keyword.
+# Missing colon :.
+# Missing closing parenthesis ), square bracket ], or curly brace }.
+
+
+fortune = random.randint(0, 4)
+
+if fortune == 0:
+    print("May you one day be carbon neutral")
+elif fortune == 1:
+    print("You have rice in your teeth")
+elif fortune == 2:
+    print("No snowflake feels responsible for an avalanche")
+elif fortune == 3:
+    print("You can only connect the dots looking backwards")
+elif fortune == 4:
+    print("The fortune you seek is in another cookie")
+
+# Who Wants To Be A Millionaire 💰
+
+score = 0
+
+option1 = 'Fresca'
+option2 = 'V8'
+option3 = "LBJ"
+option4 = 'A&W'
+
+print("For ordering his favorite beverages on demand, LBJ had four buttons installed in the Oval Office labeled 'Coffee', 'Tea', 'Coke', and what?\n")
+
+print("A.", option1)
+print("B.", option2)
+print("C.", option3)
+print("D.", option4)
+
+answer = 'a'
+
+if answer == 'A' or answer == 'a':
+    score += 100
+    print("\nCorrect!")
+else:
+    print("\nNope, sorry!")
+
+# Area Calculator 📏
+
+
+base = 20
+height = 30
+area = base * height / 2
+
+print("The triangle area is", area)
+
+length = 2
+width = 12
+area = length * width
+
+print("The rectangle area is", area)
+
+radius = 36
+area = math.pi * radius * radius
+
+print("The circle area is", area)
+
+# There is also another type of error that doesn’t have error messages that we will cover down the line:
+
+# Logic errors: Errors found by the programmer when the program isn’t doing what it is intending to do.
