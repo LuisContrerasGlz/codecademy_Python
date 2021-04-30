@@ -77,3 +77,145 @@ orders_combined = orders + new_orders
 
 
 broken_prices = [5, 3, 4, 5, 4] + [4]
+
+employees = ["Michael", "Dwight", "Jim", "Pam", "Ryan", "Andy", "Robert"]
+
+employee_four = employees[3]
+
+print(employees[6])
+
+# We can use the index -1 to select the last item of a list, even when we don’t know how many elements are in a list.
+
+pancake_recipe = ["eggs", "flour", "butter", "milk", "sugar", "love"]
+
+# If we select the -1 index, we get the final element, "love".
+
+print(pancake_recipe[-1])
+
+shopping_list = ["eggs", "butter", "milk", "cucumbers", "juice", "cereal"]
+
+last_element = shopping_list[-1]
+index5_element = shopping_list[5]
+
+print(last_element)
+print(index5_element)
+
+# To change a value in a list, reassign the value using the specific index.
+
+garden = ["Tomatoes", "Green Beans", "Cauliflower", "Grapes"]
+garden[2] = "Strawberries"
+
+print(garden)
+
+# Negative indices will work as well.
+garden[-1] = "Raspberries"
+
+print(garden)
+
+# Your code below:
+garden_waitlist = ["Jiho", "Adam", "Sonny", "Alisha"]
+
+garden_waitlist[1] = "Calla"
+print(garden_waitlist)
+
+garden_waitlist[-1] = "Alex"
+print(garden_waitlist)
+
+# We can remove elements in a list using the .remove() Python method.
+shopping_line = ["Cole", "Kip", "Chris", "Sylvana"]
+
+# We could remove "Chris" by using the .remove() method
+shopping_line.remove("Chris")
+
+print(shopping_line)
+
+# We can also use .remove() on a list that has duplicate elements.
+# Only the first instance of the matching element is removed:
+
+# Create a list
+shopping_line = ["Cole", "Kip", "Chris", "Sylvana", "Chris"]
+
+# Remove a element
+shopping_line.remove("Chris")
+print(shopping_line)
+
+# Your code below:
+order_list = ["Celery", "Orange Juice", "Orange", "Flatbread"]
+
+order_list.remove("Flatbread")
+print(order_list)
+
+new_store_order_list = ["Orange", "Apple", "Mango", "Broccoli", "Mango"]
+new_store_order_list.remove("Mango")
+
+print(new_store_order_list)
+
+# Lists can contain other lists! We will commonly refer to these as two-dimensional (2D) lists.
+# We will often find that a two-dimensional list is a very good structure for representing grids such as games like tic-tac-toe.
+
+# A 2d list with three lists in each of the indices.
+tic_tac_toe = [
+    [["X"], ["O"], ["X"]],
+    [["O"], ["X"], ["O"]],
+    [["O"], ["O"], ["X"]]
+]
+
+heights = [["Jenny", 61], ["Alexus", 70], [
+    "Sam", 67], ["Grace", 64], ["Vik", 68]]
+
+ages = [["Aaron", 15], ["Dhruti", 16]]
+
+# Your code below:
+class_name_test = [
+    ["Jenny", 90],
+    ["Alexus", 85.5],
+    ["Sam", 83],
+    ["Ellie", 101.5]
+]
+
+print(class_name_test)
+
+# Checkpoint 2
+sams_score = class_name_test[2][1]
+print(sams_score)
+
+# Checkpoint 3
+ellies_score = class_name_test[-1][-1]
+print(ellies_score)
+
+# Your code below:
+incoming_class = [
+    ["Kenny", "American", 9],
+    ["Tanya", "Russian", 9],
+    ["Madison", "Indian", 7]
+]
+
+incoming_class[2][2] = 8
+incoming_class[-3][-3] = "Ken"
+
+print(incoming_class)
+
+# Your code below:
+first_names = ["Ainsley", "Ben", "Chani", "Depak"]
+
+preferred_size = ["Small", "Large", "Medium"]
+
+preferred_size.append("Medium")
+
+print(preferred_size)
+
+# Checkpoint 4
+customer_data = [["Ainsley", "Small", True], ["Ben", "Large", False], [
+    "Chani", "Medium", True], ["Depak", "Medium", False]]
+print(customer_data)
+
+# Checkpoint 5
+customer_data[2][2] = False
+
+# Checkpoint 6
+customer_data[1].remove(False)
+
+# Checkpoint 7
+customer_data_final = customer_data + \
+    [["Amit", "Large", True], ["Karim", "X-Large", False]]
+print(customer_data_final)
