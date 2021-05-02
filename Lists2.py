@@ -168,3 +168,27 @@ print(last_two_elements)
 
 slice_off_last_three = suitcase[:-3]
 print(slice_off_last_three)
+
+# In Python, it is common to want to count occurrences of an item in a list.
+
+letters = ["m", "i", "s", "s", "i", "s", "s", "i", "p", "p", "i"]
+
+# If we want to know how many times i appears in this word, we can use the list method called .count():
+num_i = letters.count("i")
+print(num_i)  # Would output: 4
+
+# Notice that since .count() returns a value, we must assign it to a variable to use it.
+# We can even use .count() to count element appearances in a two-dimensional list.
+
+number_collection = [[100, 200], [100, 200], [475, 29], [34, 34]]
+
+# If we wanted to know how often the sublist [100, 200] appears:
+
+num_pairs = number_collection.count([100, 200])
+print(num_pairs)  # Would output: 2
+
+votes = ["Jake", "Jake", "Laurie", "Laurie", "Laurie", "Jake", "Jake", "Jake", "Laurie", "Cassie",
+         "Cassie", "Jake", "Jake", "Cassie", "Laurie", "Cassie", "Jake", "Jake", "Cassie", "Laurie"]
+
+jake_votes = votes.count("Jake")
+print(jake_votes)
