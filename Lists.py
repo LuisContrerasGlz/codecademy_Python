@@ -112,7 +112,6 @@ garden[-1] = "Raspberries"
 
 print(garden)
 
-# Your code below:
 garden_waitlist = ["Jiho", "Adam", "Sonny", "Alisha"]
 
 garden_waitlist[1] = "Calla"
@@ -139,7 +138,6 @@ shopping_line = ["Cole", "Kip", "Chris", "Sylvana", "Chris"]
 shopping_line.remove("Chris")
 print(shopping_line)
 
-# Your code below:
 order_list = ["Celery", "Orange Juice", "Orange", "Flatbread"]
 
 order_list.remove("Flatbread")
@@ -165,7 +163,6 @@ heights = [["Jenny", 61], ["Alexus", 70], [
 
 ages = [["Aaron", 15], ["Dhruti", 16]]
 
-# Your code below:
 class_name_test = [
     ["Jenny", 90],
     ["Alexus", 85.5],
@@ -183,7 +180,6 @@ print(sams_score)
 ellies_score = class_name_test[-1][-1]
 print(ellies_score)
 
-# Your code below:
 incoming_class = [
     ["Kenny", "American", 9],
     ["Tanya", "Russian", 9],
