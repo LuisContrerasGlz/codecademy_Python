@@ -163,9 +163,6 @@ print(fruits[:-1])  # Would output: ['apple', 'cherry', 'pineapple', 'orange']
 
 suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
 
-# Your code below:
-
-
 last_two_elements = suitcase[-2:]
 print(last_two_elements)
 
