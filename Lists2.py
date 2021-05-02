@@ -22,8 +22,6 @@ print(store_line)
 front_display_list = ["Mango", "Filet Mignon", "Chocolate Milk"]
 print(front_display_list)
 
-# Your code below:
-
 front_display_list.insert(0, "Pineapple")
 print(front_display_list)
 
@@ -48,10 +46,7 @@ cs_topics.pop(2)
 data_science_topics = ["Machine Learning", "SQL",
                        "Pandas", "Algorithms", "Statistics", "Python 3"]
 
-
-# Your code below:
 data_science_topics.pop()
-
 
 data_science_topics.pop(3)
 print(data_science_topics)
@@ -76,10 +71,25 @@ print(my_range)  # Would output: range(0, 10)
 
 print(list(my_range))  # Would output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-# Your code below:
-
 number_list = range(9)
 print(list(number_list))
 
 zero_to_seven = range(8)
 print(list(zero_to_seven))
+
+# By default, range() creates a list starting at 0.
+# However, if we call range() with two inputs, we can create a list that starts at a different number.
+
+# For example, range(2, 9) would generate numbers starting at 2 and ending at 8 (just before 9):
+
+my_list = range(2, 9)
+print(list(my_list))  # Would output: [2, 3, 4, 5, 6, 7, 8]
+
+# If we use a third input, we can create a list that “skips” numbers.
+# For example, range(2, 9, 2) will give us a list where each number is 2 greater than the previous number:
+
+my_range2 = range(2, 9, 2)
+print(list(my_range2))  # Would output: [2, 4, 6, 8]
+
+range_five_three = range(5, 15, 3)
+range_diff_five = range(0, 40, 5)
