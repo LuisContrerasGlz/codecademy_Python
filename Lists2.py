@@ -223,3 +223,26 @@ names.sort()
 cities = ["London", "Paris", "Rome", "Los Angeles", "New York"]
 sorted_cities = cities.sort(reverse=True)
 print(sorted_cities)
+
+# A second way of sorting a list in Python is to use the built-in function sorted().
+# The sorted() function is different from the .sort() method in two ways:
+# It comes before a list, instead of after as all built-in functions do.
+# It generates a new list rather than modifying the one that already exists.
+
+names = ["Xander", "Buffy", "Angel", "Willow", "Giles"]
+
+# Using sorted(), we can create a new list, called sorted_names:
+
+sorted_names = sorted(names)
+print(sorted_names)
+
+# This yields the list sorted alphabetically:
+
+['Angel', 'Buffy', 'Giles', 'Willow', 'Xander']
+
+games = ["Portal", "Minecraft", "Pacman", "Tetris", "The Sims", "Pokemon"]
+
+games_sorted = sorted(games)
+
+print(games)
+print(games_sorted)
