@@ -174,3 +174,33 @@ while countdown >= 0:
     countdown -= 1
 
 print("We have liftoff!")
+
+# A while loop isn’t only good for counting! Similar to how we saw for loops working with lists, we can use while loops to iterate through a list as well.
+
+ingredients = ["milk", "sugar", "vanilla extract", "dough", "chocolate"]
+
+# We know that a list has a predetermined length.
+# If we use the length of the list as the basis for how long our while loop needs to run, we can iterate the exact length of the list.
+
+# We can use the built-in Python len() function to accomplish this:
+
+# Length would be equal to 5
+length = len(ingredients)
+
+# We can then use this length in addition to another variable to construct the while loop:
+
+length = len(ingredients)
+index = 0
+
+while index < length:
+    print(ingredients[index])
+    index += 1
+
+python_topics = ["variables", "control flow", "loops", "modules", "classes"]
+
+length = len(python_topics)
+index = 0
+
+while index < length:
+    print("I am learning about " + python_topics[index])
+    index += 1
