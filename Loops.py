@@ -126,3 +126,51 @@ promise = "I will finish the python loops module!"
 
 for temp in range(5):
     print(promise)
+
+# In Python, for loops are not the only type of loops we can use.
+# Another type of loop is called a while loop and is a form of indefinite iteration.
+# A while loop performs a set of instructions as long as a given condition is true.
+
+# The structure follows this pattern:
+
+# while <conditional statement>:
+#  <action>
+
+count = 0
+while count <= 3:
+    # Loop Body
+    print(count)
+    count += 1
+
+# Notice that in our example the code under the loop declaration is indented.
+# Similar to a for loop, everything at the same level of indentation after the while loop declaration is run on every iteration of the loop while the condition is true.
+
+while count <= 3:
+    # Loop Body
+    print(count)
+    count += 1
+    # Any other code at this level of indentation will
+    # run on each iteration
+
+# If we ever forget to indent, we’ll get an IndentationError or unexpected behavior.
+
+# While Loop Walkthrough
+count = 0
+print("Starting While Loop")
+while count <= 3:
+    # Loop Body
+    # Print if the condition is still true
+    print("Loop Iteration - count <= 3 is still true")
+    # Print the current value of count
+    print("Count is currently " + str(count))
+    # Increment count
+    count += 1
+    print(" ----- ")
+print("While Loop ended")
+
+countdown = 10
+while countdown >= 0:
+    print(countdown)
+    countdown -= 1
+
+print("We have liftoff!")
