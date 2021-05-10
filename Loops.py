@@ -245,3 +245,19 @@ for dog_breed in dog_breeds_available_for_adoption:
     if dog_breed == dog_breed_I_want:
         print("They have the dog I want!")
         break
+
+# While the break control statement will come in handy, there are other situations where we don’t want to end the loop entirely.
+
+big_number_list = [1, 2, -1, 4, -5, 5, 2, -9]
+
+for i in big_number_list:
+    if i <= 0:
+        continue
+    print(i)
+
+ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for i in ages:
+    if i < 21:
+        continue
+    print(i)
