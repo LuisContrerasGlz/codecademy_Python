@@ -261,3 +261,46 @@ for i in ages:
     if i < 21:
         continue
     print(i)
+
+# We will find certain situations that require nested loops.
+
+project_teams = [["Ava", "Samantha", "James"],
+                 ["Lucille", "Zed"], ["Edgar", "Gabriel"]]
+
+for team in project_teams:
+    print(team)
+
+# Would output:
+# ["Ava", "Samantha", "James"]
+# ["Lucille", "Zed"]
+# ["Edgar", "Gabriel"]
+
+# Loop through each sublist
+for team in project_teams:
+    # Loop elements in each sublist
+    for student in team:
+        print(student)
+
+# This would output:
+# Ava
+# Samantha
+# James
+# Lucille
+# Zed
+# Edgar
+# Gabriel
+
+sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+
+scoops_sold = 0
+
+sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+
+scoops_sold = 0
+
+for location in sales_data:
+    print(location)
+    for locations in location:
+        scoops_sold = scoops_sold + locations
+
+print(scoops_sold)
