@@ -204,3 +204,13 @@ index = 0
 while index < length:
     print("I am learning about " + python_topics[index])
     index += 1
+
+# A loop that never terminates is called an infinite loop.
+# These are very dangerous for our code because they will make our program run forever and thus consume all of your computer’s resources.
+# A program that hits an infinite loop often becomes completely unusable.
+# The best course of action is to avoid writing an infinite loop.
+
+# my_favorite_numbers = [4, 8, 15, 16, 42]
+
+# for number in my_favorite_numbers:
+#   my_favorite_numbers.append(1)
