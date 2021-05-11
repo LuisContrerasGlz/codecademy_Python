@@ -310,3 +310,21 @@ grades = [90, 88, 62, 76, 74, 89, 48, 57]
 scaled_grades = [grade + 10 for grade in grades]
 
 print(scaled_grades)
+
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+
+can_ride_coaster = [height for height in heights if height > 161]
+
+print(can_ride_coaster)
+
+single_digits = range(10)
+squares = []
+
+for item in single_digits:
+    print(item)
+    squares.append(item**2)
+
+print(squares)
+
+cubes = [item**3 for item in single_digits]
+print(cubes)
