@@ -37,3 +37,40 @@ print("The best route is by train and will take approximately 10 minutes.")
 print("Setting the Empire State Building as the starting point and Time Square as our destination.")
 print("Calculating the total distance between our points.")
 print("The best route is by train and will take approximately 10 minutes.")
+
+# A function consists of many parts, so let’s first get familiar with its core - a function definition.
+
+
+def function_name():
+  # functions tasks go here
+
+    # The def keyword indicates the beginning of a function (also known as a function header).
+    # The function header is followed by a name in snake_case format that describes the task the function performs.
+    # It’s best practice to give your functions a descriptive yet concise name.
+
+    # Following the function name is a pair of parenthesis ( ) that can hold input values known as parameters.
+    # In this example function, we have no parameters.
+
+    # A colon : to mark the end of the function header.
+
+    # Lastly, we have one or more valid python statements that make up the function body
+    # Like loops and conditionals, code inside a function must be indented to show that they are part of the function.
+
+
+def trip_welcome():
+    print("Welcome to Tripcademy!")
+    print("Let's get you to your destination.")
+
+
+def directions_to_timesSq():
+    print("Walk 4 mins to 34th St Herald Square train station")
+    print("Take the Northbound N, Q, R, or W train 1 stop")
+    print("Get off the Times Square 42nd Street stop")
+
+# The process of executing the code inside the body of a function is known as calling it (This is also known as “executing a function”).
+# To call a function in Python, type out its name followed by parentheses ( ).
+
+
+directions_to_timesSq()
+
+# Calling the function will execute the print statements within the body (from the top statement to the bottom statement)
