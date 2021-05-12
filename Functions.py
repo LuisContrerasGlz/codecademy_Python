@@ -74,3 +74,18 @@ def directions_to_timesSq():
 directions_to_timesSq()
 
 # Calling the function will execute the print statements within the body (from the top statement to the bottom statement)
+
+# In Python, the amount of whitespace tells the computer what is part of a function and what is not part of that function.
+# The execution of a program always begins on the first line.
+# The code is then executed one line at a time from top to bottom.
+# This is known as execution flow and is the order a program in python executes code.
+
+print("Checking the weather for you!")
+
+
+def weather_check():
+    print("Looks great outside! Enjoy your trip.")
+    print("False Alarm, the weather changed! There is a thunderstorm approaching. Cancel your plans and stay inside.")
+
+
+weather_check()
