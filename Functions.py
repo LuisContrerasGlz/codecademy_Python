@@ -89,3 +89,45 @@ def weather_check():
 
 
 weather_check()
+
+
+def trip_welcome():
+    print("Welcome to Tripcademy!")
+    print("Looks like you're going to Times Square today.")
+
+
+trip_welcome()
+
+# Function parameters allow our function to accept data as an input value.
+# We list the parameters a function takes as input between the parentheses of a function ( ).
+
+
+def my_function(single_parameter)  # function that defines a single parameter
+
+
+def trip_welcome(destination):
+    print("Welcome to Tripcademy!")
+    print("Looks like you're going to " + destination + " today.")
+
+# In the above example, we define a single parameter called destination and apply it in our function body in the second print statement.
+# We are telling our function it should expect some data passed in for destination that it can apply to any statements in the function body.
+# Our parameter of destination is used by passing in an argument to the function when we call it.
+
+
+trip_welcome("Times Square")
+
+# Would output:
+
+# Welcome to Tripcademy!
+# Looks like you're going to Times Square today.
+
+# The parameter is the name defined in the parenthesis of the function and can be used in the function body.
+# The argument is the data that is passed in when we call the function and assigned to the parameter name.
+
+
+def generate_trip_instructions(location):
+    print("Looks like you are planning a trip to visit " + location)
+    print("You can use the public subway system to get to " + location)
+
+
+generate_trip_instructions("Grand Central Station")
