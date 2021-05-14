@@ -131,3 +131,29 @@ def generate_trip_instructions(location):
 
 
 generate_trip_instructions("Grand Central Station")
+
+# Using a single parameter is useful but functions let us use as many parameters as we want! That way, we can pass in more than one input to our functions.
+# We can write a function that takes in more than one parameter by using commas:
+
+
+def my_function(parameter1, parameter2, parameter3):
+  # Some code
+
+    # When we call our function, we will need to provide arguments for each of the parameters we assigned in our function definition.
+
+
+def trip_welcome(origin, destination):
+    print("Welcome to Tripcademy")
+    print("Looks like you are traveling from " + origin)
+    print("And you are heading to " + destination)
+
+# The ordering of your parameters is important as their position will map to the position of the arguments and will determine their assigned value in the function body
+
+
+def calculate_expenses(plane_ticket_price, car_rental_rate, hotel_rate, trip_time):
+    car_rental_total = car_rental_rate * trip_time
+    hotel_total = hotel_rate * trip_time - 10
+    print(car_rental_total + hotel_total + plane_ticket_price)
+
+
+calculate_expenses(200, 100, 100, 5)
