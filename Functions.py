@@ -157,3 +157,48 @@ def calculate_expenses(plane_ticket_price, car_rental_rate, hotel_rate, trip_tim
 
 
 calculate_expenses(200, 100, 100, 5)
+
+# In Python, there are 3 different types of arguments we can give a function.
+
+# Positional arguments: arguments that can be called by their position in the function definition.
+# Keyword arguments: arguments that can be called by their name.
+# Default arguments: arguments that are given default values.
+
+# Positional Arguments are arguments we have already been using! Their assignments depend on their positions in the function call.
+
+
+def calculate_taxi_price(miles_to_travel, rate, discount):
+    print(miles_to_travel * rate - discount)
+
+# Alternatively, we can use Keyword Arguments where we explicitly refer to what each argument is assigned to in the function call. Notice in the code example below that the arguments do not follow the same order as defined in the function declaration.
+
+
+calculate_taxi_price(rate=0.5, discount=10, miles_to_travel=100)
+
+# Lastly, sometimes we want to give our function arguments default values. We can provide a default value to an argument by using the assignment operator (=). This will happen in the function declaration rather than the function call.
+
+
+def calculate_taxi_price(miles_to_travel, rate, discount=10):
+    print(miles_to_travel * rate - discount)
+
+# When using a default argument, we can either choose to call the function without providing a value for a discount (and thus our function will use the default value assigned) or overwrite the default argument by providing our own:
+
+
+# Using the default value of 10 for discount.
+calculate_taxi_price(10, 0.5)
+
+# Overwriting the default value of 10 with 20
+calculate_taxi_price(10, 0.5, 20)
+
+
+def trip_planner(first_destination, second_destination, final_destination="Codecademy HQ"):
+    print("Here is what your trip will look like!")
+    print("First, we will stop in " + first_destination, "then" +
+          second_destination, "and lastly " + final_destination)
+
+
+trip_planner("France", "Germany", "Denmark")
+trip_planner("Denmark", "France", "Germany")
+trip_planner(first_destination="Iceland",
+             final_destination="Germany", second_destination="India")
+trip_planner("Brooklyn", "Queens")
