@@ -271,3 +271,39 @@ def show_favorite_locations():
 
 print_count_locations()
 show_favorite_locations()
+
+# At this point, our functions have been using print() to help us visualize the output in our interpreter.
+# Functions can also return a value to the program so that this value can be modified or used later.
+# We use the Python keyword return to do this.
+
+
+def calculate_exchange_usd(us_dollars, exchange_rate):
+    return us_dollars * exchange_rate
+
+
+new_zealand_exchange = calculate_exchange_usd(100, 1.4)
+
+print("100 dollars in US currency would give you " +
+      str(new_zealand_exchange) + " New Zealand dollars")
+
+# Saving our values returned from a function like we did with new_zealand_exchange allows us to reuse the value (in the form of a variable) throughout the rest of the program.
+# When there is a result from a function that is stored in a variable, it is called a returned function value.
+
+current_budget = 3500.75
+shirt_expense = 9
+
+
+def print_remaining_budget(budget):
+    print("Your remaining budget is: $" + str(budget))
+
+
+print_remaining_budget(current_budget)
+
+
+def deduct_expense(budget, expense):
+    return budget - expense
+
+
+new_budget_after_shirt = deduct_expense(current_budget, shirt_expense)
+
+print_remaining_budget(new_budget_after_shirt)
