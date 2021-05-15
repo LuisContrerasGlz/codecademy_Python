@@ -234,3 +234,40 @@ print(min_price)
 
 rounded_price = round(tshirt_price, 1)
 print(rounded_price)
+
+# As we expand our programs with more functions, we might start to ponder, where exactly do we have access to our variables?
+
+# To examine this, let’s revisit a modified version of the first function we built out together:
+
+
+def trip_welcome(destination):
+    print(" Looks like you're going to the " + destination + " today. ")
+
+# What if we wanted to access the variable destination outside of the function? Could we use it?
+
+
+def trip_welcome(destination):
+    print(" Looks like you're going to the " + destination + " today. ")
+
+
+print(destination)
+
+# We call the part of a program where destination can be accessed its scope. The scope of destination is only inside the trip_welcome().
+# If a variable lives outside of any function it can be accessed anywhere in the file.
+
+favorite_locations = "Paris, Norway, Iceland"
+# This function will print a hardcoded count of how many locations we have.
+
+
+def print_count_locations():
+    print("There are 3 locations")
+
+# This function will print the favorite locations
+
+
+def show_favorite_locations():
+    print("Your favorite locations are: " + favorite_locations)
+
+
+print_count_locations()
+show_favorite_locations()
