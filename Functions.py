@@ -202,3 +202,35 @@ trip_planner("Denmark", "France", "Germany")
 trip_planner(first_destination="Iceland",
              final_destination="Germany", second_destination="India")
 trip_planner("Brooklyn", "Queens")
+
+# There are two distinct categories for functions in the world of Python.
+# What we have been writing so far in our exercises are called User Defined Functions - functions that are written by users.
+
+# There is another category called Built-in functions - functions that come built into Python for us to use.
+
+destination_name = "Venkatanarasimharajuvaripeta"
+
+# Built-in function: len()
+length_of_destination = len(destination_name)
+
+# Built-in function: print()
+print(length_of_destination)
+
+# There are even more obscure ones like help() where Python will print a link to documentation for us and provide some details:
+help("string")
+
+tshirt_price = 9.75
+shorts_price = 15.50
+mug_price = 5.99
+poster_price = 2.00
+
+max_price = max(tshirt_price, shorts_price, mug_price, poster_price)
+
+print(max_price)
+
+min_price = min(tshirt_price, shorts_price, mug_price, poster_price)
+
+print(min_price)
+
+rounded_price = round(tshirt_price, 1)
+print(rounded_price)
