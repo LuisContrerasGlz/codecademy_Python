@@ -189,3 +189,26 @@ fixed_first_name = "R" + first_name[1:]
 favorite_fruit_conversation = "He said, \"blueberries are my favorite!\""
 
 password = "theycallme\"crazy\"91"
+
+# Because strings are lists, that means we can iterate through a string using for or while loops.
+# This opens up a whole range of possibilities of ways we can manipulate and analyze strings.
+
+
+def print_each_letter(word):
+    for letter in word:
+        print(letter)
+
+
+favorite_color = "blue"
+print_each_letter(favorite_color)
+# => 'b'
+# => 'l'
+# => 'u'
+# => 'e'
+
+
+def get_length(word):
+    numberChar = 0
+    for letter in word:
+        numberChar += 1
+    return numberChar
