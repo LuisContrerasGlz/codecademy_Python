@@ -53,3 +53,36 @@ last_name = "Villanueva"
 
 new_account = last_name[:5]
 temp_password = last_name[2:6]
+
+# We can also concatenate, or combine, two existing strings together into a new string.
+
+fruit_prefix = "blue"
+fruit_suffix = "berries"
+
+favorite_fruit = fruit_prefix + fruit_suffix
+
+print(favorite_fruit)
+# Output: blueberries
+
+# We have to manually add in the spaces when concatenating strings if we want to include them.
+
+fruit_sentence = "My favorite fruit is" + favorite_fruit
+
+print(fruit_sentence)
+# Output: My favorite fruit isblueberries
+
+fruit_sentence = "My favorite fruit is " + favorite_fruit
+
+print(fruit_sentence)
+# Output: My favorite fruit is blueberries
+
+first_name = "Julie"
+last_name = "Blevins"
+
+
+def account_generator(first_name, last_name):
+    return first_name[:3] + last_name[:3]
+
+
+new_account = account_generator("Luis", "Contreras")
+print(new_account)
