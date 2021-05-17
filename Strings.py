@@ -142,3 +142,22 @@ def password_generator(first_name, last_name):
 
 
 temp_password = password_generator(first_name, last_name)
+
+# We used len() to get a slice of characters at the end of a string.
+# There’s a much easier way to do this — we can use negative indices!
+# Negative indices count backward from the end of the string, so string_name[-1] is the last character of the string, string_name[-2] is the second last character of the string, etc.
+
+favorite_fruit = 'blueberry'
+print(favorite_fruit[-1])
+# => 'y'
+
+print(favorite_fruit[-2])
+# => 'r'
+
+print(favorite_fruit[-3:])
+# => 'rry' we are able to slice the last three characters of ‘blueberry’ by having a starting index of -3 and omitting a final index.
+
+company_motto = "Copeland's Corporate Company helps you capably cope with the constant cacophony of daily life"
+
+second_to_last = company_motto[-2]
+final_word = company_motto[-4:]
