@@ -212,3 +212,58 @@ def get_length(word):
     for letter in word:
         numberChar += 1
     return numberChar
+
+# When we iterate through a string we do something with each character.
+# By including conditional statements inside of these iterations, we can start to do some really cool stuff.
+
+
+favorite_fruit = "blueberry"
+counter = 0
+for character in favorite_fruit:
+    if character == "b":
+        counter = counter + 1
+print(counter)
+
+# First, we define our string, favorite_fruit, and a variable called counter, which we set equal to zero.
+# Then the for loop will iterate through each character in favorite_fruit and compare it to the letter b.
+# Each time a character equals b the code will increase the variable counter by one.
+# Then, once all characters have been checked, the code will print the counter, telling us how many bs were in “blueberry”.
+# This is a great example of how iterating through a string can be used to solve a specific application, in this case counting a certain letter in a word.
+
+
+def letter_check(word, letter):
+    for character in word:
+        if character == letter:
+            return True
+    return False
+
+# There’s an even easier way than iterating through the entire string to determine if a character is in a string.
+# We can do this type of check more efficiently using in. in checks if one string is part of another string.
+
+# E.G letter in word
+# Here, letter in word is a boolean expression that is True if the string letter is in the string word.
+
+
+print("e" in "blueberry")
+# => True
+print("a" in "blueberry")
+# => False
+
+# In fact, this method is more powerful than the function in the last exercise because it not only works with letters, but with entire strings as well.
+
+print("blue" in "blueberry")
+# => True
+print("blue" in "strawberry")
+# => False
+
+
+def contains(big_string, little_string):
+    return little_string in big_string
+
+
+def common_letters(string_one, string_two):
+    common = []
+    for letter in string_one:
+        if (letter in string_two) and not (letter in common):
+            common.append(letter)
+    return common
