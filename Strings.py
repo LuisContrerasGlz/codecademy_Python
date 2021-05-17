@@ -161,3 +161,18 @@ company_motto = "Copeland's Corporate Company helps you capably cope with the co
 
 second_to_last = company_motto[-2]
 final_word = company_motto[-4:]
+
+# We’ve been selecting characters from strings, slicing strings, and concatenating strings.
+# Each time we perform one of these operations we are creating an entirely new string.
+# This is because strings are immutable.
+# This means that we cannot change a string once it is created.
+# We can use it to create other strings, but we cannot change the string itself.
+# This property, generally, is known as mutability.
+# Data types that are mutable can be changed, and data types, like strings, that are immutable cannot be changed.
+
+first_name = "Bob"
+last_name = "Daily"
+
+# first_name[0] = "R"
+
+fixed_first_name = "R" + first_name[1:]
