@@ -51,3 +51,27 @@ print(man_its_a_hot_one.split())
 
 line_one = "The sky has given over"
 line_one_words = line_one.split()
+
+# If we provide an argument for .split() we can dictate the character we want our string to be split on.
+# This argument should be provided as a string itself.
+
+greatest_guitarist = "santana"
+print(greatest_guitarist.split('n'))
+# => ['sa', 'ta', 'a']
+
+# We provided 'n' as the argument for .split() so our string “santana” got split at each 'n' character into a list of three strings.
+
+print(greatest_guitarist.split('a'))
+# => ['s', 'nt', 'n', ' ']
+# When you split a string on a character that it also ends with, you’ll end up with an empty string at the end of the list.
+
+authors = "Audre Lorde,Gabriela Mistral,Jean Toomer,An Qi,Walt Whitman,Shel Silverstein,Carmen Boullosa,Kamala Suraiyya,Langston Hughes,Adrienne Rich,Nikki Giovanni"
+
+author_names = authors.split(",")
+print(author_names)
+
+author_last_names = []
+for name in author_names:
+    author_last_names.append(name.split()[-1])
+
+print(author_last_names)
