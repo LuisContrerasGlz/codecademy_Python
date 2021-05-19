@@ -224,3 +224,25 @@ print("smooth".find('oo'))
 god_wills_it_line_one = "The very earth will disown you"
 
 disown_placement = god_wills_it_line_one.find("disown")
+
+# Python also provides a handy string method for including variables in strings.
+# This method is .format().
+# .format() takes variables as an argument and includes them in the string that it is run on.
+# You include {} marks as placeholders for where those variables will be imported.
+
+
+def favorite_song_statement(song, artist):
+    return "My favorite song is {} by {}.".format(song, artist)
+
+# The function favorite_song_statement takes two arguments, song and artist,
+# then returns a string that includes both of the arguments and prints a sentence.
+# Note: .format() can take as many arguments as there are {} in the string it is run on, which in this case is two.
+
+
+print(favorite_song_statement("Smooth", "Santana"))
+# => "My favorite song is Smooth by Santana"
+
+
+def poem_title_card(title, poet):
+    poem_desc = "The poem \"{}\" is written by {}.".format(title, poet)
+    return poem_desc
