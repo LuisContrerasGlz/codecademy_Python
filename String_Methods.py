@@ -113,3 +113,21 @@ from the withered grass-stems
 of the overhanging embankment."""
 
 spring_storm_lines = spring_storm_text.split('\n')
+
+# Now that you’ve learned to break strings apart using .split(), let’s learn to put them back together using .join().
+# .join() is essentially the opposite of .split(), it joins a list of strings together with a given delimiter.
+# 'delimiter'.join(list_you_want_to_join)
+# The string .join() acts on is the delimiter you want to join with, therefore the list you want to join has to be the argument.
+
+my_munequita = ['My', 'Spanish', 'Harlem', 'Mona', 'Lisa']
+print(' '.join(my_munequita))
+# => 'My Spanish Harlem Mona Lisa'
+# We take the list of strings, my_munequita, and we joined it together with our delimiter, ' ', which is a space. The space is important if you are trying to build a sentence from words, otherwise, we would have ended up with:
+
+print(''.join(my_munequita))
+# => 'MySpanishHarlemMonaLisa'
+
+reapers_line_one_words = ["Black", "reapers", "with",
+                          "the", "sound", "of", "steel", "on", "stones"]
+
+reapers_line_one = " ".join(reapers_line_one_words)
