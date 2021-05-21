@@ -12,6 +12,7 @@
 # One common library that comes as part of the Python Standard Library is datetime.
 # datetime helps you work with dates and times in Python.
 
+from decimal import Decimal
 from matplotlib import pyplot as plt
 import codecademylib3_seaborn
 import random
@@ -65,3 +66,28 @@ numbers_b = random.sample(range(1000), 12)
 plt.plot(numbers_a, numbers_b)
 
 plt.show()
+
+# Let’s say you are writing software that handles monetary transactions.
+# If you used Python’s built-in floating-point arithmetic to calculate a sum, it would result in a weirdly formatted number.
+
+cost_of_gum = 0.10
+cost_of_gumdrop = 0.35
+
+cost_of_transaction = cost_of_gum + cost_of_gumdrop
+# Returns 0.44999999999999996
+
+# Being familiar with rounding errors in floating-point arithmetic you want to use a data type that performs decimal arithmetic more accurately.
+
+
+cost_of_gum = Decimal('0.10')
+cost_of_gumdrop = Decimal('0.35')
+
+cost_of_transaction = cost_of_gum + cost_of_gumdrop
+# Returns 0.45 instead of 0.44999999999999996
+
+
+two_decimal_points = Decimal('0.2') + Decimal('0.69')
+print(two_decimal_points)
+
+four_decimal_points = Decimal('0.53') * Decimal('0.65')
+print(four_decimal_points)
