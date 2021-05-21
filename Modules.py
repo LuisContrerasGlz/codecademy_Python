@@ -12,7 +12,29 @@
 # One common library that comes as part of the Python Standard Library is datetime.
 # datetime helps you work with dates and times in Python.
 
+import random
 from datetime import datetime
 
 current_time = datetime.now()
 print(current_time)
+
+# There are hundreds of Python modules that you can use.
+# Another one of the most commonly used is random which allows you to generate numbers or select items at random.
+
+# With random, we’ll be using more than one piece of the module’s functionality, so the import syntax will look like:
+# import random
+
+# We’ll work with two common random functions:
+# random.choice() which takes a list as an argument and returns a number from the list.
+# random.randint() which takes two numbers as arguments and generates a random number between the two numbers you passed in.
+
+# Import random:
+
+# Create random_list:
+random_list = [random.randint(1, 100) for i in range(101)]
+
+# Create randomer_number:
+randomer_number = random.choice(random_list)
+
+# Print randomer_number:
+print(randomer_number)
