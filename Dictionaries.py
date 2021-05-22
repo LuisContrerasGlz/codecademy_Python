@@ -19,3 +19,22 @@ sensors = {"living room": 21, "kitchen": 23, "bedroom": 20, "pantry": 22}
 num_cameras = {"backyard": 6, "garage": 2, "driveway": 1}
 
 print(sensors)
+
+# In dictionaries the keys can be numbers as well.
+
+# For example, if we were mapping restaurant bill subtotals to the bill total after tip, a dictionary could look like:
+subtotal_to_total = {20: 24, 10: 12, 5: 6, 15: 18}
+
+# Values can be of any type.
+# We can use a string, a number, a list, or even another dictionary as the value associated with a key!
+
+students_in_classes = {"software design": ["Aaron", "Delila", "Samson"], "cartography": [
+    "Christopher", "Juan", "Marco"], "philosophy": ["Frederica", "Manuel"]}
+
+# The list ["Aaron", "Delila", "Samson"], which is the value for the key "software design", represents the students in that class.
+# We can also mix and match key and value types. For example:
+
+person = {"name": "Shuri", "age": 18, "family": ["T'Chaka", "Ramonda"]}
+
+translations = {"mountain": "orod", "bread": "bass",
+                "friend": "mellon", "horse": "roch"}
