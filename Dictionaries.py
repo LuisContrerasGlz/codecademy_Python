@@ -50,3 +50,9 @@ translations = {"mountain": "orod", "bread": "bass",
 
 children = {"von Trapp": ["Johannes", "Rosmarie",
                           "Eleonore"], "Corleone": ["Sonny", "Fredo", "Michael"]}
+
+# A dictionary doesn’t have to contain anything. Sometimes we need to create an empty dictionary when we plan to fill it later based on some other input.
+
+empty_dict = {}
+
+my_empty_dictionary = {}
