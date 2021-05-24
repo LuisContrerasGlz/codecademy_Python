@@ -143,3 +143,20 @@ plays["Purple Haze"] = 1
 library = {"The Best Songs": plays, "Sunday Feelings": {}}
 
 print(library)
+
+# Once you have a dictionary, you can access the values in it by providing the key.
+
+building_heights = {"Burj Khalifa": 828, "Shanghai Tower": 632, "Abraj Al Bait": 601,
+                    "Ping An": 599, "Lotte World Tower": 554.5, "One World Trade": 541.3}
+
+# Then we can access the data in it like this:
+# >>> building_heights["Burj Khalifa"]
+# 828
+# >>> building_heights["Ping An"]
+# 599
+
+zodiac_elements = {"water": ["Cancer", "Scorpio", "Pisces"], "fire": ["Aries", "Leo", "Sagittarius"], "earth": [
+    "Taurus", "Virgo", "Capricorn"], "air": ["Gemini", "Libra", "Aquarius"]}
+
+print(zodiac_elements['earth'])
+print(zodiac_elements['fire'])
