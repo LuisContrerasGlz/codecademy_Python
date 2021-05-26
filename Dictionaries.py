@@ -236,3 +236,39 @@ stack_id = user_ids.get("superStackSmash", 100000)
 
 print(tc_id)
 print(stack_id)
+
+# Sometimes we want to get a key and remove it from the dictionary.
+
+raffle = {223842: "Teddy Bear", 872921: "Concert Tickets",
+          320291: "Gift Basket", 412123: "Necklace", 298787: "Pasta Maker"}
+
+# We can use .pop() to do this.
+# Just like with .get(), we can provide a default value to return if the key does not exist in the dictionary:
+
+raffle.pop(320291, "No Prize")
+"Gift Basket"
+raffle
+{223842: "Teddy Bear", 872921: "Concert Tickets",
+    412123: "Necklace", 298787: "Pasta Maker"}
+raffle.pop(100000, "No Prize")
+"No Prize"
+raffle
+{223842: "Teddy Bear", 872921: "Concert Tickets",
+    412123: "Necklace", 298787: "Pasta Maker"}
+raffle.pop(872921, "No Prize")
+"Concert Tickets"
+raffle
+{223842: "Teddy Bear", 412123: "Necklace", 298787: "Pasta Maker"}
+
+# .pop() works to delete items from a dictionary, when you know the key value.
+
+available_items = {"health potion": 10, "cake of the cure": 5, "green elixir": 20,
+                   "strength sandwich": 25, "stamina grains": 15, "power stew": 30}
+health_points = 20
+
+health_points += available_items.pop("stamina grains", 0)
+health_points += available_items.pop("power stew", 0)
+health_points += available_items.pop("mystic bread", 0)
+
+print(available_items)
+print(health_points)
