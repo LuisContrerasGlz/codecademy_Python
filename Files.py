@@ -83,3 +83,18 @@ with open('generated_file.txt', 'w') as gen_file:
 with open('bad_bands.txt', 'w') as bad_bands_doc:
 
     bad_bands_doc.write('The Beatles')
+
+# So maybe completely deleting and overwriting existing files is something that bothers you.
+# Isn’t there a way to just add a line to a file without completely deleting it? Of course there is!
+# Instead of opening the file using the argument 'w' for write-mode, we open it with 'a' for append-mode.
+
+with open('generated_file.txt', 'a') as gen_file:
+    gen_file.write("... and it still is")
+
+# In the code above we open a file object in the temporary variable gen_file.
+# This variable points to the file generated_file.txt and, since it’s open in append-mode, adds the line ... and it still is as a new line to the file.
+
+# Notice that opening the file in append-mode, with 'a' as an argument to open(), means that using the file object’s .write() method appends whatever is passed to the end of the file in a new line.
+
+with open('cool_dogs.txt', 'a') as cool_dogs_file:
+    cool_dogs_file.write('Air Buddy')
