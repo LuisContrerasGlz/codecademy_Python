@@ -181,3 +181,18 @@ with open('cool_csv.csv') as cool_csv_file:
     cool_csv_dict = csv.DictReader(cool_csv_file)
     for row in cool_csv_dict:
         print(row['Cool Fact'])
+
+# Other ways of separating values are valid CSV files these days.
+# People used to call Tab-Separated Values files TSV files, but as other separators grew in popularity everyone realized that creating a new .[a-z]sv file format for every value-separating character used is not sustainable.
+# So we call all files with a list of different values a CSV file and then use different delimiters (like a comma or tab) to indicate where the different values start and stop.
+
+
+with open('addresses.csv', newline='') as addresses_csv:
+    address_reader = csv.DictReader(addresses_csv, delimiter=';')
+    for row in address_reader:
+        print(row['Address'])
+
+
+with open('books.csv') as books_csv:
+    books_reader = csv.DictReader(books_csv, delimiter='@')
+    isbn_list = [book['ISBN'] for book in books_reader]
