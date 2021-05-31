@@ -24,3 +24,17 @@ print(type(my_dict))
 
 my_list = []
 print(type(my_list))
+
+# A class is a template for a data type.
+# It describes the kinds of information that class will hold and how a programmer will interact with that data.
+
+
+class CoolClass:
+    pass
+
+# In the above example we created a class and named it CoolClass.
+# We used the pass keyword in Python to indicate that the body of the class was intentionally left blank so we don’t cause an IndentationError.
+
+
+class Facade:
+    pass
