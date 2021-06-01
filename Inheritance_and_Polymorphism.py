@@ -114,3 +114,46 @@ candle_shop.buy('blue')
 
 # This should raise OutOfStock:
 # candle_shop.buy('green')
+
+# Inheritance is a useful way of creating objects with different class variables, but is that all it’s good for?
+# What if one of the methods needs to be implemented differently?
+# In Python, all we have to do to override a method definition is to offer a new definition for the method in our subclass.
+# An overridden method is one that has a different definition from its parent class.
+
+
+class User:
+    def __init__(self, username, permissions):
+        self.username = username
+        self.permissions = permissions
+
+    def has_permission_for(self, key):
+        if self.permissions.get(key):
+            return True
+        else:
+            return False
+
+
+class Admin(User):
+    def has_permission_for(self, key):
+        return True
+
+
+class Message:
+    def __init__(self, sender, recipient, text):
+        self.sender = sender
+        self.recipient = recipient
+        self.text = text
+
+
+class User:
+    def __init__(self, username):
+        self.username = username
+
+    def edit_message(self, message, new_text):
+        if message.sender == self.username:
+            message.text = new_text
+
+
+class Admin(User):
+    def edit_message(self, message, new_text):
+        message.text = new_text
