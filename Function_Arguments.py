@@ -8,6 +8,7 @@
 # And function calls are the places a function is invoked, with parentheses, after its definition
 
 # The "def" keyword is the start of a function definition
+from products import create_product
 import shapes
 import reqs as requests
 from bs4 import BeautifulSoup
@@ -389,3 +390,88 @@ def scream_and_whisper(text):
 
 
 the_scream, the_whisper = scream_and_whisper("Luke I am your father")
+
+# We don’t always know how many arguments a function is going to receive, and sometimes we want to handle any possibility that comes at us.
+# Python gives us two methods of unpacking arguments provided to functions.
+# The first method is called positional argument unpacking, because it unpacks arguments given by position.
+
+
+def shout_strings(*args):
+    for argument in args:
+        print(argument.upper())
+
+
+shout_strings("hi", "what do we have here", "cool, thanks!")
+# Prints out:
+# "HI"
+# "WHAT DO WE HAVE HERE"
+# "COOL, THANKS!"
+
+# In shout_strings() we use a single asterisk (*) to indicate we’ll accept any number of positional arguments passed to the function.
+# Our parameter args is a tuple of all of the arguments passed.
+# In this case args has three values inside, but it can have many more (or fewer).
+# Note that args is just a parameter name, and we aren’t limited to that name (although it is rather standard practice).
+# We can also have other positional parameters before our *args parameter.
+
+
+def truncate_sentences(length, *sentences):
+    for sentence in sentences:
+        print(sentence[:length])
+
+
+truncate_sentences(8, "What's going on here", "Looks like we've been cut off")
+# Prints out:
+# "What's g"
+# "Looks li"
+
+print(join(path_segment_1, path_segment_2, path_segment_3))
+
+
+def myjoin(*args):
+    joined_string = args[0]
+    for arg in args[1:]:
+        joined_string += '/' + arg
+    return joined_string
+
+
+print(myjoin(path_segment_1, path_segment_2, path_segment_3))
+
+# Python doesn’t stop at allowing us to accept unlimited positional parameters, it gives us the power to define functions with unlimited keyword parameters too.
+# The syntax is very similar, but uses two asterisks (**) instead of one. Instead of args, we call this kwargs — as a shorthand for keyword arguments.
+
+
+def arbitrary_keyword_args(**kwargs):
+    print(type(kwargs))
+    print(kwargs)
+    # See if there's an "anything_goes" keyword arg
+    # and print it
+    print(kwargs.get('anything_goes'))
+
+
+arbitrary_keyword_args(this_arg="wowzers", anything_goes=101)
+# Prints "<class 'dict'>
+# Prints "{'this_arg': 'wowzers', 'anything_goes': 101}"
+# Prints "101"
+
+# Checkpoint 1
+print("My name is {name} and I'm feeling {feeling}.".format(
+    name="Tim",
+    feeling="10/10",
+))
+
+# Checkpoint 2
+
+# Update create_products() to take arbitrary keyword arguments
+
+
+def create_products(**products_dict):
+    for name, price in products_dict.items():
+        create_product(name, price)
+
+
+# Checkpoint 3
+# Update the call to `create_products()` to pass in this dictionary as a series of keyword
+create_products(
+    Baseball='3',
+    Shirt='14',
+    Guitar='70')
