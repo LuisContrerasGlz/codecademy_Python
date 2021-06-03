@@ -27,6 +27,8 @@ Link to cheatsheet: https://www.codecademy.com/learn/learn-python-3/modules/lear
 11. Python Code Challenges 2
 12. Function Arguments
 
+![Cert](./certificatep.png)
+
 URL to CodeCademy:
 
 https://www.codecademy.com/learn/learn-python-3
