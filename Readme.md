@@ -29,6 +29,8 @@ Link to cheatsheet: https://www.codecademy.com/learn/learn-python-3/modules/lear
 
 ![Cert](./certificatep.png)
 
+Verify certificate at https://www.codecademy.com/profiles/contrerasgonzalezluisfcogmail.com/certificates/6c152bd262967f8c941c9707ed636bda
+
 URL to CodeCademy:
 
 https://www.codecademy.com/learn/learn-python-3
