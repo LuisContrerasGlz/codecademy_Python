@@ -89,3 +89,21 @@ def movie_review(rating):
   if(rating < 9):
     return "This one was fun."
   return "Outstanding!"
+
+def some_function(some_input1, some_input2):
+  # … do something with the inputs …
+  return output
+
+# A function that returns the sum of the first and last elements of a given list might look like this:
+def first_plus_last(lst):
+  return lst[0] + lst[-1]
+
+# Create a function called append_size that has one parameter named lst.
+# The function should append the size of lst (inclusive) to the end of lst.
+# The function should then return this new list.
+
+def append_size(lst):
+  lst.append(len(lst))
+  return lst
+
+print(append_size([23, 42, 108]))
