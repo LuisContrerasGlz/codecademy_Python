@@ -205,3 +205,10 @@ print(square_root(16))
 # should print 4
 print(square_root(100))
 # should print 10
+
+# Create a function called tip() that has two parameters named total and percentage.
+# This function should return the amount you should tip given a total and the percentage you want to tip.
+
+def tip(total, percentage):
+  tip_amount=(total * percentage) / 100
+  return tip_amount
