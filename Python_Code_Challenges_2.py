@@ -150,3 +150,10 @@ def combine_sort(lst1, lst2):
   unsorted=lst1 + lst2
   sortedList=sorted(unsorted)
   return sortedList
+
+# A function that prints all odd numbers in a list would look like this:
+
+def odd_nums(lst):
+  for item in lst:
+    if item % 2 == 1:
+      print(item)
