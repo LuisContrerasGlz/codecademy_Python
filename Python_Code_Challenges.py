@@ -40,3 +40,13 @@ print(add_exclamation("Codecademy"))
 # should print Codecademy!!!!!!!!!!
 print(add_exclamation("Codecademy is the best place to learn"))
 # should print Codecademy is the best place to learn
+
+# A function that counts the number of values in a dictionary that are above a given number
+
+
+def greater_than_ten(my_dictionary, number):
+    count = 0
+    for value in my_dictionary.values():
+        if value > number:
+            count += 1
+    return count
