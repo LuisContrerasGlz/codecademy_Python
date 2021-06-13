@@ -194,3 +194,14 @@ print(tenth_power(0))
 # 0 to the 10th power is 0
 print(tenth_power(2))
 # 2 to the 10th power is 1024
+
+# Write a function named square_root() that has one parameter named num.
+# Use exponents (**) to return the square root of num.
+
+def square_root(num):
+  return num ** 0.5
+
+print(square_root(16))
+# should print 4
+print(square_root(100))
+# should print 10
