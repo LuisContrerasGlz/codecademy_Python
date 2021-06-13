@@ -240,3 +240,16 @@ def lots_of_math(a, b, c, d):
 # A function that finds the difference in length between two Strings:
 def lengthDiff(str1, str2):
   return len(str1) - len(str2)
+
+# Write a function called unique_english_letters that takes the string word as a parameter.
+# The function should return the total number of unique letters in the string.
+# Uppercase and lowercase letters should be counted as different letters.
+
+letters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+def unique_english_letters(word):
+  uniques=0
+  for letter in letters:
+    if letter in word:
+      uniques += 1
+  return uniques
