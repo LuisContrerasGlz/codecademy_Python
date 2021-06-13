@@ -236,3 +236,7 @@ def lots_of_math(a, b, c, d):
   print(second)
   print(third)
   return fourth
+
+# A function that finds the difference in length between two Strings:
+def lengthDiff(str1, str2):
+  return len(str1) - len(str2)
