@@ -100,3 +100,34 @@ print(values_that_are_keys({1: 100, 2: 1, 3: 4, 4: 10}))
 # should print [1, 4]
 print(values_that_are_keys({"a": "apple", "b": "a", "c": 100}))
 # should print ["a"]
+
+# A function that counts the number of values in a dictionary that are above a given number
+
+
+def greater_than_ten(my_dictionary, number):
+    count = 0
+    for value in my_dictionary.values():
+        if value > number:
+            count += 1
+    return count
+
+# Write a function named word_length_dictionary that takes a list of strings named words as a parameter.
+# The function should return a dictionary of key/value pairs where every key is a word in words and every value is the length of that word.
+
+
+def word_length_dictionary(words):
+    word_lengths = {}
+    for word in words:
+        word_lengths[word] = len(word)
+    return word_lengths
+
+# Create a function named unique_values that takes a dictionary named my_dictionary as a parameter.
+# The function should return the number of unique values in the dictionary.
+
+
+def unique_values(my_dictionary):
+    seen_values = []
+    for value in my_dictionary.values():
+        if value not in seen_values:
+            seen_values.append(value)
+    return len(seen_values)
