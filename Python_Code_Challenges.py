@@ -131,3 +131,29 @@ def unique_values(my_dictionary):
         if value not in seen_values:
             seen_values.append(value)
     return len(seen_values)
+
+# Class syntax looks like this:
+
+
+class MyClass:
+    # ... class variables ...
+
+    def __init__(self):
+        # ... instance variables ...
+
+        # A class which defines a rectangle using a class variable, instance variables, and a method
+
+
+class Rectangle:
+    sides = 4
+
+    def __init__(self, width=0, height=0):
+        self.width = width
+        self.height = height
+
+    def calculate_area(self):
+        return self.width * self.height
+
+
+rectangle_1 = Rectangle(5, 10)
+rect_area = rectangle_1.calculate_area()
